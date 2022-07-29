@@ -8,7 +8,7 @@ var server=http.createServer(app);
 
 mongoose.Promise=global.Promise;
 
-mongoose.connect('mongodb://localhost:27017/api_rest',{useNewUrlParser:true})
+mongoose.connect('mongodb+srv://juandiaz:amoonepiece@cluster0.emfmfbb.mongodb.net/?retryWrites=true&w=majority',{useNewUrlParser:true})
         .then(db=> console.log('db connect'))
         .catch(error =>console.log(error));
 
