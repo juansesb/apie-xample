@@ -7,8 +7,8 @@ var port=3000;
 var server=http.createServer(app);
 
 mongoose.Promise=global.Promise;
-
-mongoose.connect('mongodb+srv://juandiaz:amoonepiece@cluster0.emfmfbb.mongodb.net/?retryWrites=true&w=majority',{useNewUrlParser:true})
+/*'mongodb://localhost:27017/api_rest'*/
+mongoose.connect('mongodb+srv://juandiaz:amoonepiece@cluster0.emfmfbb.mongodb.net/test',{useNewUrlParser:true})
         .then(db=> console.log('db connect'))
         .catch(error =>console.log(error));
 
