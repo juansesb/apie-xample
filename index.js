@@ -5,15 +5,9 @@ var http=require('http');
 var app=require('./app');
 var port=3000;
 var server=http.createServer(app);
+const {connectDB}=require('./db')
+connectDB();
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://juan:<amo@api.5qluf2r.mongodb.net/?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
 /*'mongodb://localhost:27017/api_rest'*/
 /*
 mongoose.Promise=global.Promise;
