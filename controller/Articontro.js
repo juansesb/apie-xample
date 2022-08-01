@@ -129,7 +129,7 @@ var controller={
             if(!personas){
                 return res.status(500).send({
                     status:'error',
-                    message:'no hay personas'
+                    message:'ya no existe esta persona'
                 });
             }
             return res.status(500).send({
