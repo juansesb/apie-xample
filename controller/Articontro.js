@@ -214,7 +214,9 @@ var controller={
            });
         }
         var file_path=req.files.files.path;
+        console.log(file_path);
         var filename=file_path.split('\\');
+        console.log(filename);
         var filename=filename[2];
         console.log(filename);
         var ext=filename.split('.');
