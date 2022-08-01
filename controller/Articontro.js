@@ -216,6 +216,7 @@ var controller={
         var file_path=req.files.files.path;
         var filename=file_path.split('\\');
         var filename=filename[2];
+        console.log(filename);
         var ext=filename.split('.');
         var ext=ext[1]
         if(ext!='jpg' && ext!='png'){
