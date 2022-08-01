@@ -134,7 +134,7 @@ var controller={
             }
             return res.status(500).send({
                 status:'succes',
-                personas
+                message:'usuario borrado'
             });
         })
 
